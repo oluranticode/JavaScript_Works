@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+</head>
+<body>
+    <form id="regForm" >
+        <!-- Random Number 1: for getting random numbers -->
+        <input type="text" id="tb" name="tb" />
+        <input type="submit"  value="get Number" onclick="Random()" name="tb" />
+
+        <!-- Random Number 2: for getting random numbers -->
+        <input type="text" id="tb2" name="tb2" />
+
+        <!-- Random Letters: for getting random letters -->
+        <input type="text" id="tb3" name="tb3" />
+        
+        <!-- getting text -->
+            <label> Eneter Number</label>
+        <input type="text" id="number" name="number" />
+
+      <p id="tb1"></p>
+    </form>
+
+    <script> 
+    //   Random Number Function
+        function Random() {
+            // Random Number 1
+            var rnd = Math.floor(Math.random() * 10000);
+            document.getElementById('tb').value = rnd;
+
+            // Random Number 2
+            var rnd1 = Math.floor(Math.random() * 234);
+            document.getElementById('tb2').value = rnd1;
+
+              // Random Letters
+              var rnd2 = Math.floor(Math.random() * 56);
+              var rnd3 = toString(rnd2)
+            document.getElementById('tb3').value = rnd3;
+        }
+
+// getting text
+        function plusNumber(event) {
+            event.preventDefault();
+            var num = document.getElementById('number').value;
+            document.getElementById('tb1').innerHTML = num;
+        }
+
+        document.getElementById('regForm').addEventListener('submit', plusNumber, false);
+
+     </script>
+    
+</body>
+</html>

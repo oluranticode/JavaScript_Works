@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>second  lesson </title>
+         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <!--pop-up-box-->
+        <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+        <!--//pop-up-box-->
+        <!-- price range -->
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+        <!-- fonts -->
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <b>   <strong> <p id="demo" style="color:#000"></p></strong> </b>  
+<!-- Test function -->
+        <div>
+            <input type="text" id="input" value="" >
+            <button type="submit" onclick="myFunction()">submit</button>
+            <b>   <strong> <p id="input2" style="color:#000"></p></strong> </b>  
+            <b>   <strong> <p id="inputz" style="color:#000"></p></strong> </b>  
+        </div>
+        <br>
+        <!-- ERROR -->
+        <div>
+            <input type="text" id="putInput" value="" >
+            <button type="submit" onclick="myError()">submit</button>
+            <b>   <strong> <p id="input3" style="color:#000"></p></strong> </b>  
+        </div> <br>
+        <!-- map array -->
+        <b>   <strong> <p id="map" style="color:#000"></p></strong> </b>  
+        <!-- JSON -->
+        <b>   <strong> <p id="read" style="color:#000"></p></strong> </b> 
+         <!-- CONSTRUCTOR OBJECT -->
+         <b>   <strong> <p id="con" style="color:#000"></p></strong> </b> 
+         <!-- Function Sum -->
+         <b>   <strong> <p id="sum" style="color:#000"></p></strong> </b> 
+         <!-- Function call -->
+         <b>   <strong> <p id="call" style="color:#000"></p></strong> </b> 
+         <!-- DOM -->
+         <div id="main">
+            <b>   <strong> <p id="dom" style="color:#000">this is me</p></strong> </b> 
+            <b>   <strong> <p id="dom1" style="color:#000"></p></strong> </b> 
+
+            <!-- Dom class -->
+            <b>   <strong> <p class="dom1" style="color:#000">this is me</p></strong> </b> 
+            <b>   <strong> <p id="dom2" style="color:#000"></p></strong> </b> 
+            <!-- click me -->
+            <b>   <strong> <p id="click" style="color:#000" 
+                onclick ="document.getElementById('click').innerHTML='oops!'">CLICK ME</p></strong> </b> 
+            </div>
+
+            <!-- Event onmouseover -->
+            <div>
+            <b>   <strong> <p class="dom1" style=
+                "color:#000; background-color: red;" onmouseover="myOver(this)"
+                 onmouseout="myOut(this)">sd</p></strong> </b> 
+                 </div>
+ <!-- Javasript add listener1 -->
+                 <div>
+                    <button type="submit" id = "myAdd1"> try it1</button> 
+                    <b>   <strong> <p id="add" style="color:#000"></p></strong> </b> 
+                </div>
+
+                <!-- Javasript add listener2 -->
+<div id ="myAdd2">
+    <button type="submit" id = "myAdd2"> try it2</button> 
+    <b>   <strong> <p id="add" style="color:#000"></p></strong> </b> 
+</div>
+
+<!-- addEventListener -->
+<div>
+    <button type="submit" id="eventbtn">change ME</button>
+    <b>   <strong> <p id="event1" style="color:#000"></p></strong> </b> 
+    <b>   <strong> <p id="event2" style="color:#000"></p></strong> </b> 
+    <b>   <strong> <p id="event3" style="color:#000"></p></strong> </b> 
+    
+</div>
+<!-- JavaScript removeEventListener -->
+
+<h2>JavaScript removeEventListener()</h2>
+
+<div >
+
+  <p id="myDIV" style="color:#fff"> This div element has an onmousemove event handler that displays a random number every time you move your mouse inside this orange field.</p>
+  <p>Click the button to remove the div's event handler.</p>
+  <button onclick="removeHandler()" id="myBtn">Remove</button>
+</div>
+
+<p id="demot"></p>
+
+<!-- color change btn -->
+<button type="submit" id = "myAdd2" onclick="colorBtn()">change me</button> 
+<b>   <strong> <p id="color_btn" style="color:#000"></p></strong> </b> 
+
+<div>
+    <h2>The XMLHttpRequest Object</h2>
+
+    <button type="button" onclick="loadDoc()">Request data</button>
+    
+    <p>Click the button several times to see if the time changes, or if the file is cached.</p>
+    
+    <p id="demod"></p>
+
+</div>
+
+<!-- JSON Objects 1 -->
+<button type="submit" onclick="jobBtn()">change me</button> 
+<b>   <strong> <p id="job" style="color:#000"></p></strong> </b> 
+
+<!-- JSON Objects 2 -->
+<button type="submit" id ="json">change me2</button> 
+<b>   <strong> <p id="job1" style="color:#000"></p></strong> </b> 
+        <script src="script1.js"></script>
+    </body>
+</html>
